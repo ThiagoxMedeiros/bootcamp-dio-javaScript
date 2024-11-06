@@ -11,13 +11,29 @@ Classificação:
 
 nota1 = 5;
 nota2 = 3;
-nota3 = 3;
+nota3 = 10;
 mediaNotas = (nota1+nota2+nota3) / 3;
 
-if(mediaNotas >= 0 && mediaNotas <5){
+//Criando estrutura de decisão com IF
+/*if(mediaNotas >= 0 && mediaNotas <5){
   console.log(`O aluno está reprovado!`)
 }else if(mediaNotas >= 5 && mediaNotas < 7){
   console.log(`O aluno irá fazer a PF!`)
 }else{
   console.log(`O aluno está aprovado!`)
+}
+*/
+
+//Criando estrutura de decisão com Switch
+
+switch(true){
+  case (mediaNotas >= 0 && mediaNotas <5):
+    console.log(`A média do aluno foi ${mediaNotas.toFixed(2)}! O aluno está reprovado!`);
+    break
+  case (mediaNotas >= 5 && mediaNotas < 7):
+    console.log(` A média do aluno foi ${mediaNotas.toFixed(2)}! O aluno irá fazer a PF!`);
+    break
+  default:
+    console.log(`A média do aluno foi ${mediaNotas.toFixed(2)}! O aluno está aprovado!`)
+    break
 }
